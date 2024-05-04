@@ -1,1 +1,4 @@
-com\example\Main.class
+com\magicalarena\game\Player.class
+com\magicalarena\game\Dice.class
+com\magicalarena\game\Game.class
+com\magicalarena\Main.class
