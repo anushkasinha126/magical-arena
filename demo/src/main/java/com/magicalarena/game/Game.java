@@ -25,7 +25,14 @@ public class Game {
             int damage = attacker.attack(defender);
             System.out.println(attacker.getClass().getSimpleName() + " attacks " + defender.getClass().getSimpleName() + " for " + damage + " damage.");
 
-            System.out.println("\nPlayer A Health: " + playerA.getHealth());
+            if(playerA.getHealth()<0)
+                System.out.println("\nPlayer A Health: 0");
+            else
+                System.out.println("\nPlayer A Health: " + playerA.getHealth());
+
+            if(playerB.getHealth()<0)
+                System.out.println("\nPlayer B Health: 0");
+            else
             System.out.println("Player B Health: " + playerB.getHealth());
 
             try {
@@ -40,9 +47,9 @@ public class Game {
         }
 
         if (playerA.getHealth() <= 0) {
-            System.out.println("Player B wins!");
+            System.out.println("\nPlayer B wins!");
         } else {
-            System.out.println("Player A wins!");
+            System.out.println("\nPlayer A wins!");
         }
     }
 }
